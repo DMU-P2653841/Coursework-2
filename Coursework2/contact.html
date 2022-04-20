@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css\style.css" type="text/css">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  </head>
+  <body>
+<div class="content">
+
+  <header><!-- added a header element which is sutiable for the header section of the page-->
+    <div class="heading"> <!--Created a div and added a class which seperates that div from others -->
+      <a class="DMUArchery" href="home.html"><span>DMU</span>Archery</a> <!-- anchor allows for a clickable link to the desiered page. span element allows the word DMU to be individually changed in css code-->
+      <a href="home.html"><img class="logo" src="img\quick_logo.png" alt="logo"></a><!-- anchor allows for a clickable link to the desiered page.-->
+  </div><!-- closes off div-->
+
+
+  <div class="navbar"><!--Created a div and added a class which seperates that div from others -->
+    <nav class="primary-nav"><!--Created a div and added a class which seperates that div from others -->
+      <ul><!-- creates an unordered list element-->
+        <li class="inline"><a class="anchor" href="home.html">Home</a></li><!-- anchor allows for a clickable link to the desiered page. in a list-->
+        <li class="inline"><a class="anchor" href="about.html">About Us</a></li><!-- anchor allows for a clickable link to the desiered page. in a list-->
+        <li class="inline"><a class="anchor" href="contact.html">Contact Us</a></li><!-- anchor allows for a clickable link to the desiered page. in a list-->
+      </ul><!-- closes off unordered list-->
+    </nav><!-- closes off nav-->
+  </div><!-- end of div-->
+</header><!-- closes off header-->
+
+
+  <section class="contact-section">  <!-- creates a section housing div elements seperated with unique class identifier-->
+    <div class="container">  <!--Created a div and added a class which seperates that div from others -->
+      <div class="Contact"><!--Created a div and added a class which seperates that div from others -->
+          <h1 class="contact">Contact</h1><!--Creates a bold heading with h1 attribute -->
+
+          <form class="form" action="" method="post"> <!--creates a HTML form for the website-->
+            <label for="name">Name</label> <!--Labels the first contact box for name -->
+            <input type="text" id="name"  name="name"> <!--Allows for text to be inputted by the user and id allows for future code to be implemented to receive data -->
+            <br><br><!--this adds a line breaker (space in between)-->
+            <label for="email">Email</label><!--Labels the first contact box for name -->
+            <input type="email" id="email"  name="email"><!--Allows for text to be inputted by the user and id allows for future code to be implemented to receive data -->
+            <br><br><!--this adds a line breaker (space in between)-->
+            <label for="message">Message</label><!--Labels the first contact box for name -->
+            <textarea name="message" id="message" rows="25" cols="75"></textarea> <!--Modifys size of each box through rows and collums instead of width and height -->
+            <input type="submit" name="send-message-cta" value="Send message">
+          </form>
+      </div>
+
+      <br><br><br><!--this adds a line breaker (space in between)-->
+
+      <div>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2421.9152990528974!2d-1.1463437840177184!3d52.62537473616669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487760c4f106e769%3A0xb3de1bbc014ffb57!2sThe%20Watershed!5e0!3m2!1sen!2suk!4v1645643945259!5m2!1sen!2suk"  allowfullscreen loading="lazy"></iframe>
+      </div> <!-- link relates to GOOGLE MAPS premade code-->
+    </div>
+  </section>
+
+</div>
+
+<br><br><br><br><!--this adds a line breaker (space in between)-->
+
+<footer> <!--Added a footer element-->
+  <ul> <!--creates an unordered list -->
+    <li class="socials"><a  target="blank" href="https://www.instagram.com/dmu_archery/?hl=en"><img class="social" src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/></a></li> <!--Created a div and added a class which seperates that div from others -->
+    <li class="socials"><a  target="blank" href="https://www.facebook.com/DMUarchery"><img class="social" src="https://img.icons8.com/fluency/48/000000/facebook-new.png"/></a></li><!--Created a div and added a class which seperates that div from others -->
+    <li class="socials"><a  target="blank" href="https://twitter.com/dmuleicester"><img class="social" src="https://img.icons8.com/color/48/000000/twitter--v2.png"/></a></li><!--Created a div and added a class which seperates that div from others -->
+  </ul>
+<div class="pnumber"><!--Created a div and added a class which seperates that div from others -->
+  <p>P2653841</p> <!--A simply paragraph-->
+</div><!-- closes off div-->
+
+</footer><!-- closes off footer-->
+
+
+
+
+  </body>
+</html>

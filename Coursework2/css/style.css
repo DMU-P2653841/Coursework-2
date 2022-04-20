@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Oxygen&family=Ubuntu:wght@700&display=swap'); /* external link to which external fonts ar imported into the website so it can be displayed on the website */
+
+:root{
+  --primary-colour: #9d0932; /*creates a unique line of code which allows it to be copy and pasted to other parts of the css to allow for that code to have the same properties of this, speeding up the process of design */
+}
+body{/* the code at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  background: #BEBBBB; /* This sets the background color of the website pages */
+  margin: 0; /* sets the margin of the website to 0 */
+  font-family: 'Oxygen', sans-serif, calabri; /* sets the defult font to these 3 presets */
+  justify-content: center; /* set's all my content to the centre of the screen */
+  align-items: center;/* aligns the items to the centre of my screen */
+
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 500px) { /* set's the perameters of where the design will switch from desktop to mobile view  */
+  .homelinks, .title1, .navbar {font-size: 15px}; /* set's the classes to the pixel size of 15  */
+}
+
+/* Heading section*/
+header {  /* selects header element to be changed */
+  background: var(--primary-colour); /* set's colour to root element setting */
+  padding: 1em 2em 2em 2em; /* adds padding to the left, right, top and bottom */
+  margin: auto; /* auto sets the margin  */
+  max-width: 70%; /* sets the max width to 70% */
+}
+
+.heading{/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  display: flex; /* makes heading section a flex box */
+  place-content: spcae-between; /* creates space in between the content */
+}
+
+.DMUArchery{/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  text-decoration: none; /* removes any preset design elemnts (font color) */
+  font-weight: bold; /* sets font to bold */
+  color: black; /* sets text colour to black */
+  font-size: 3em; /* set's font size to 3em */
+}
+
+.logo{/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  align: right;/* aligns logo to the right of the screen */
+  width: 150px; /* set's the logo width size */
+  height: 75px; /* set's the logo height size */
+}
+
+
+.navbar {/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  background: var(--primary-colour); /* sets the colour to root element setting */
+  max-width: 70%; /* maximises the width space to 70% */
+  margin: auto; /* auto set's the margin */
+  font-size: 1.25em; /* set's the font to 1.25em */
+}
+
+.anchor {/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  text-decoration: none; /* removes preset design elemnts */
+  color: white; /* sets font color to white */
+  padding-right: 10px; /* adds a padding of 10 pixels to the right of text */
+  padding-left: 10px; /* adds padding of 10 pixels to the left of the text */
+  font-size: 1.5em; /* sets font to 1.5em */
+}
+
+.anchor:hover { /* hover attribute allows the css below only to occur when the element is hovered over */
+ background-color: rgba(41, 41, 41, 0.76); /* changes the background color */
+ border-radius: 10px; /* adds a border radius of 10 pixels */
+}
+
+.inline { /* displays text horizontally  */
+  display: inline;
+}
+
+
+ul{ /* adds unordered attribute list */
+  list-style-type: none; /* removes any list styling e.g. numbers */
+  margin: 0; /* sets margin to zero */
+  padding: 0; /* sets padding to zero */
+  text-align: center; /* aligns text to centre */
+}
+
+footer{ /* only effects footer class */
+  background: #252525; /* cjanges background colour */
+  padding: 1em; /* adds padding of 1em */
+  margin: auto; /* sets margin to auto */
+  max-width: 70%; /* sets width size to max of 70% */
+  height: 7em; /* sets height of footer to 7em */
+}
+
+.socials {/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  display: inline; /* displays elemnts horizontally */
+  padding: 0.5em 0.5em; /* sets padding to left and right to 0.5 em */
+}
+
+.social {/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  width: 2em; /* set's width to 2 em*/
+  height: 2em; /* sets height to 2 em */
+}
+
+.pnumber{/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  text-align: center; /* aligns text to the centre of the screen */
+}
+
+
+/*Homepage*/
+
+span {/* This code at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  color: red; /* effects the span element (DMU) so it becomes red */
+
+}
+
+.container{/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  position: relative; /* position relative to content */
+  text-align: center; /* aligns text to centre */
+  color: white; /* makes font text white */
+}
+
+.title1 {/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  background-color: rgba(191, 60, 56, 0.63); /* cahnges background color */
+  width: 15em; /* sets width to 15em */
+  border-radius: 10px; /* sets border radius to 10 pixels */
+  position: absolute; /* sets so position doesn't change */
+  top: 50%; /* adds spcae from top */
+  left: 50%; /* adds space from the left */
+  transform: translate(-50%, -50%); /* sets paramters of what the animation will do */
+  animation: fadeIn linear 2s; /* sets fade in animation to a linear curve and lasts 2 seconds */
+}
+
+.frontpage  {/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  display: block; /* set's display element */
+  margin-left: auto; /* sets margin to be automatically set from the left */
+  margin-right: auto; /* sets margin to be automatically set from the right */
+  padding-top: 2em; /* adds 2em space from the top */
+  width: 70%; /* sets width to 70%*/
+  height: 25%; /* sets height to 25% */
+  animation: slideInFromLeft 1.5s; /* allows animation to slide in from the left with a 1.5s timer */
+  animation-timing-function: ease-in-out; /*sets the curve to ease in then out */
+}
+
+@keyframes slideInFromLeft {/* creates a keyframe timeline for any transition or effect. The word after keyframe allows it to be set to the corrisponding css code */
+  0% {
+    transform: translateX(-100%); /* starts the animation from off the screen on the left */
+  }
+
+  100% {
+    transform: translateX(0); /* ends the animation in the centre of the screen through keyframes*/
+  }
+}
+
+
+.frontpage1  {/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  display: block;/* set's display element */
+  margin-left: auto;/* sets margin to be automatically set from the left */
+  margin-right: auto;/* sets margin to be automatically set from the right */
+  padding-top: 2em;/* adds 2em space from the top */
+  width: 70%;/* sets width to 70%*/
+  height: 25%;/* sets height to 25% */
+  animation: slideInFromRight 2s ease-in;/* allows animation to slide in from the left with a 2s timer easing in */
+  animation-timing-function: ease-in-out;/*sets the curve to ease in then out */
+}
+
+@keyframes slideInFromRight {/* creates a keyframe timeline for any transition or effect. The word after keyframe allows it to be set to the corrisponding css code */
+  0% {
+    transform: translateX(100%); /* starts the animation from off the screen on the right */
+  }
+
+  100% {
+    transform: translateX(0);/* ends the animation in the centre of the screen through keyframes*/
+  }
+  0% {opacity:0;}/* sets the opacity to 0 so that it is invisiable*/
+  100% {opacity:1;}/* sets the opacity to 1 so text is seeable*/
+}
+.frontpage2  {/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  display: block;/* set's display element */
+  margin-left: auto;/* sets margin to be automatically set from the left */
+  margin-right: auto;/* sets margin to be automatically set from the right */
+  padding-top: 2em;/* adds 2em space from the top */
+  width: 70%;/* sets width to 70%*/
+  height: 25%;/* sets height to 25% */
+  animation: slideInFromLeft 3s;/* allows animation to slide in from the left with a 3s timer */
+  animation-timing-function: ease-in-out;/*sets the curve to ease in then out */
+}
+
+@keyframes slideInFromLeft {/* creates a keyframe timeline for any transition or effect. The word after keyframe allows it to be set to the corrisponding css code */
+  0% {
+    transform: translateX(-100%);/* starts the animation from off the screen on the left */
+  }
+
+  100% {
+    transform: translateX(0);/* ends the animation in the centre of the screen through keyframes*/
+  }
+  0% {opacity:0;}/* sets the opacity to 0 so that it is invisiable*/
+  100% {opacity:1;}/* sets the opacity to 1 so text is seeable*/
+}
+
+@keyframes fadeIn {/* creates a keyframe timeline for any transition or effect. The word after keyframe allows it to be set to the corrisponding css code *//* creates a keyframe timeline for any transition or effect. The word after keyframe allows it to be set to the corrisponding css code */
+  0% {opacity:0;} /* sets the opacity to 0 so that it is invisiable*/
+  100% {opacity:1;}/* sets the opacity to 1 so text is seeable*/
+}
+
+.homelinks{/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  text-decoration: none; /* sets any preset decoration elemnts to none*/
+  color: white;/*sets font colour to white */
+  padding-right: 10px;/*creates space of 10 pixels from the right */
+  padding-left: 10px;/*creates space of 10 pixels to the left */
+  font-size: 2em; /* sets font size to 2em*/
+}
+
+
+/*CONTACT PAGE CSS*/
+
+
+.contact {/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  font-family: 'Oxygen', sans-serif, Ariel; /* sets the font family (desing of text) to oxygen first the if the browser doesn't support it, it falls back on the next 2 options*/
+  font-size: 3em; /* sets font size of text to 3 em*/
+}
+
+.map{/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  width: 75em; /* sets map width to 75em */
+  height: 50em;/* sets ,map width to 50em*/
+  style="border:0; /*makes it so border has no style */
+}
+
+
+
+
+/*ABOUT PAGE CSS*/
+.textbox {/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  padding-bottom: 10em; /*adds space of 10em from the bottom */
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: rgb(255, 255, 255); /* changes background colour to red*/
+  width: 60%; /*sets the width to 60% */
+  border: 15px solid black; /* adds a border outline of 15pixes to the element and sets the colour of that border to black */
+  border-radius: 10px;/* creates a curve of the burder of 10 pixels*/
+  margin: auto; /*sets margin to be auto */
+  animation: fade 2s; /* allows the text box to have a 2 second fade in animation*/
+}
+
+@keyframes fade {/* creates a keyframe timeline for any transition or effect. The word after keyframe allows it to be set to the corrisponding css code */
+  0% {opacity:0;} /*sets the opacity to zero */
+  100% {opacity:1;} /* at the 2nd second sets the opacity to 1 so it can be seen*/
+}
+
+
+.abouthead{/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  margin: 0; /* sets the margin to 0 */
+  padding-left: 1em;/*adds space of 1em to the left */
+  text-align: center; /* aligns the text to the centre of the page*/
+}
+
+.aboutinfo{/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  margin: 0; /* sets the margin to 0 */
+  padding-left: 1em;/*adds space of 1em to the left */
+  text-align: center;/* aligns the text to the centre of the page*/
+}
+
+.BUTTS{/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  text-align: center;/* aligns the text to the centre of the page*/
+}
+.comp{/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  display: block;
+  margin-left: auto;/* sets the margin to auto */
+  margin-right: auto;/* sets the margin to auto */
+  width: 75%; /*sets the width of the div element to 75%*/
+  height: 75%;/*sets the height of the div elemtnt to 75%*/
+  transition: 2s; /*sets the animation length to 2seconds*/
+}
+
+.comp:hover{/* hover attribute allows the css below only to occur when the element is hovered over */
+  width: 100%; /* when image is hovered over increases the size of the image to 100% of width*/
+  height: 100%;/* when image is hovered over increases the size of the image to 100% of height*/
+}
+
+
+
+
+/*members page CSS*/
+.archer {/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  width: 35%; /* sets width to 35%*/
+  display: block; /*sets the element to be displayed as block*/
+  margin-left: auto; /*sets margin to to be automatically set to the left*/
+  margin-right: auto; /*sets margin to be automatically set to the right*/
+}
+
+.captiontxt{/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code *//* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  text-align: center; /*aligns text to centre*/
+  font-size: 2em; /*set's font size to 2 em*/
+  font-weight: bolder; /*sets font style to be bolder*/
+}
+
+.myslides{/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  display: none; /*set so no images will be displayed first*/
+}
+
+.prev, .next {/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  cursor: pointer; /*changes cursor icon when hovering over .prev and.next elemnts*/
+  position: absolute; /*sets position to absolute */
+  top: 50%;/*adds 50% space to top*/
+  width: auto; /*sets the width to auto*/
+  margin-top: 30px;/*sets the margin from the top to be 30 pixels away*/
+  padding: 16px; /*sets the padding of the div elemnts to be 116 pixels*/
+  color: white;/*sets the font text color to be white*/
+  font-weight: bold;/*sets the font text to be bold in attribute*/
+  font-size: 18px; /*sets the font size of the element to be 18 pixels*/
+  transition: 0.6s ease;/*makes the transition to be 0.6seconds in length and to ease in*/
+  border-radius: 0 3px 3px 0; /*applies a border radius and border to the element*/
+  user-select: none; /*user selects none*/
+}
+.prev{/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  left: 25%;/*sets the position of the prev button*/
+}
+.next {/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  right: 25%;/*sets the position of the next button*/
+  border-radius: 3px 0 0 3px; /*applies a border radius and border to the element*/
+}
+
+.prev:hover, .next:hover {/* hover attribute allows the css below only to occur when the element is hovered over */
+  background-color: var(--primary-colour); /*sets the hovered background colour of prev and next button to root css selection */
+}
+
+.meminfo{/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  margin: 0;/*sets margin to 0*/
+  padding-left: 1em; /*sets padding to be left by 1em*/
+  text-align: center;/*aligns text to centre*/
+}
+
+
+
+
+
+/*bows and equipment CSS*/
+.grid-container {/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+
+  display: grid; /* sets the div to be displayed as a grid*/
+  grid-template-columns: auto auto auto; /*sets the amount of grids in the grid to be set automatically */
+  background-color: #9d0932; /* changes background colour of the grid*/
+  padding: 10px; /*adds 10 pixes in padding */
+}
+.grid-item {/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  background-color: rgba(255, 255, 255, 0.8); /* changes background colour of each individual cell of the grid */
+  border: 2px solid rgba(0, 0, 0, 0.8); /* adds a border to each grid cell and sets that border to a different color */
+  padding: 0.2em;/*adds 0.2em padding to the grid cells */
+  font-size: 1em; /* changes the font size of grix cells to 1em*/
+  text-align: center;/*aligns the text to the centre of the grid cells */
+}
+.coach{/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  width: 50%; /* sets the image size to 50%*/
+  height: 60%; /* sets the height size to 60%*/
+}
+.fade{
+  animation: slide 2s; /* adds a fade animation of 2s*/
+}
+.grid-item{/* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  color: black; /* changes font colour of grid items to black*/
+  font-size: 3em; /* changes font size of grid items to 3em*/
+}
+
+.gridtxt{ /* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  font-size: 0.75em; /*changes font size of grid text to 0.75em */
+  color: rgb(26, 26, 29); /* changes font color of grid text*/
+}
+
+.myModal:hover{/* hover attribute allows the css below only to occur when the element is hovered over */
+  cursor: crosshair; /* changes cursor design when hovered*/
+  color: blue; /* changes text to become blue*/
+}
+
+.myModal2:hover{/* hover attribute allows the css below only to occur when the element is hovered over */
+  cursor: crosshair;/* changes cursor design when hovered*/
+  color: blue;/* changes text to become blue*/
+}
+
+.myModal4:hover{ /* hover attribute allows the css below only to occur when the element is hovered over */
+  cursor: crosshair;/* changes cursor design when hovered*/
+  color: blue;/* changes text to become blue*/
+}
+
+@keyframes slide { /* creates a keyframe timeline for any transition or effect. The word after keyframe allows it to be set to the corrisponding css code */
+  0% {opacity:0.5;}/*starts with half transparency of 0.5 opacity */
+  100% {opacity:1;}/* ends with no transparency*/
+}
+
+
+/* Why archery Css*/
+
+.archeryvid { /* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  width: 70%; /* sets archery video size to be 70%*/
+  height: 50%; /* sets hight of video to be 50%*/
+  display: block; /*displays element as a block */
+  margin-left: auto; /* sets margin to be automatically set from the left*/
+  margin-right: auto;/* sets margin to be automatically set from the right*/
+}
+
+.whyinfo{ /* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  margin: 0; /*sets margin to 0 */
+  padding-left: 1em; /* sets space from the left of 1em*/
+  text-align: center; /*aligns text to centre of the page */
+}
+
+.bullseye{ /* the .example at the start of the css allows any element changes to only occur to that div element within the HTMl code */
+  width: 30%; /* sets width of the image to 30% */
+  height: 40%; /*sets height of the image to 40% of original size */
+  display: block; /*displays element as a block */
+  margin-left: auto;/* sets margin to be automatically set from the left*/
+  margin-right: auto;/* sets margin to be automatically set from the right*/
+}
